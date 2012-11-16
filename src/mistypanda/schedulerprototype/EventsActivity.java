@@ -18,7 +18,7 @@ public class EventsActivity extends Activity {
 	  ArrayList<HashMap<String,String>> list = new ArrayList<HashMap<String,String>>();
 	  @Override
 	  public void onCreate(Bundle savedInstanceState) {
-	    super.onCreate(savedInstanceState);
+	    onCreate(savedInstanceState);
 	    setContentView(R.layout.activity_events);
 	    
 //		Find the ListView resource.
@@ -40,7 +40,6 @@ public class EventsActivity extends Activity {
 	      item.put( "line1", Events[i][0]);
 	      item.put( "line2", Events[i][1]);
 	      list.add( item );
-	    }
 	    sa = new SimpleAdapter(this, list,
 	      android.R.layout.two_line_list_item ,
 	      new String[] { "line1","line2" },
