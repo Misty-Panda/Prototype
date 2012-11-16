@@ -13,7 +13,7 @@ public class EventsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
 
-        Button next = (Button) findViewById(R.id.button2);
+        Button next = (Button) findViewById(R.id.button1);
         next.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent();
